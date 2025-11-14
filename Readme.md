@@ -4,7 +4,7 @@
 
 This service demonstrates an LLM-backed agent that decides whether to:
 
-- Call external APIs (OpenWeatherMap, Wikipedia, NewsAPI)
+- Call external APIs (OpenWeatherMap, NewsAPI)
 - Or answer directly using Google Gemini
 
 It returns both the agent's **reasoning** and the **final answer** in JSON.
@@ -14,7 +14,6 @@ It returns both the agent's **reasoning** and the **final answer** in JSON.
 - `main.py` — FastAPI server with `/ask` endpoint.
 - `agent.py` — Agent logic and Gemini integration.
 - `external_tools/weather.py` — OpenWeatherMap integration.
-- `external_tools/wikipedia.py` — MediaWiki API helper.
 - `external_tools/news.py` — NewsAPI integration.
 - `utils/decision.py` — Heuristics to choose tools.
 - `utils/memory.py` — Optional short-term memory.
